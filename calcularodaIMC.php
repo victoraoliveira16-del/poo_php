@@ -22,8 +22,13 @@ class Pessoa
 $pessoa = new Pessoa(72, 1.85);
 
 echo "Peso: " . $pessoa->peso . " kg<br>";
+
 echo "Altura: " . $pessoa->altura . " m<br>";
+
 echo "Fórmula: peso / (altura²)<br>";
+
 echo "Cálculo: " . $pessoa->peso . " / (" . $pessoa->altura . "²)<br>";
+
 echo "Cálculo: " . $pessoa->peso . " / " . number_format($pessoa->altura * $pessoa->altura, 2, ',', '.') . "<br><br>";
+
 echo "IMC:   $pessoa->imc  ";
